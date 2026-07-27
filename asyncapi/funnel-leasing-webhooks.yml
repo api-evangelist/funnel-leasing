@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.funnelleasing.com/webhooks/latest
+type: Webhooks
+spec_type: none
+summary: >
+  Funnel documents an outbound webhooks surface for its leasing platform. Events
+  are delivered as application/json HTTP POST requests to a subscriber endpoint.
+  Two versions are documented: Version 2 (current / "latest") and a Version 1
+  legacy surface. No published AsyncAPI document was found. Specific event names,
+  payload schemas, and signature-verification details are documented behind the
+  portal's Walkthrough / Event Object / Events List pages, which were not machine
+  -readable at capture time (portal returned 403 to automated fetches).
+versions:
+  - version: v2
+    label: latest
+    url: https://developer.funnelleasing.com/webhooks/latest
+    current: true
+  - version: v1
+    label: legacy
+    url: https://developer.funnelleasing.com/webhooks/legacy
+    current: false
+delivery:
+  transport: HTTP POST
+  content_type: application/json
+  walkthrough: https://developer.funnelleasing.com/webhooks/latest/walkthrough
+events:
+  note: >
+    A complete list of available webhook events is published on the portal's
+    Events List page. Event names are not captured here to avoid fabrication;
+    see the source URL for the authoritative catalog.
+  catalog_url: https://developer.funnelleasing.com/webhooks/latest

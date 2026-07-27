@@ -1,0 +1,37 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.funnelleasing.com/apis/customer-api
+authentication:
+  style: HTTP Basic (API key as username, blank password); Partner API also accepts Bearer
+  transport: HTTPS required
+  ref: authentication/funnel-leasing-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v2
+  legacy: v1
+  example_path: /api/v2/onlineleasing-link/
+error_envelope:
+  format: custom
+  shape: '{ code, message, param? }'
+  ref: errors/funnel-leasing-problem-types.yml
+rate_limiting:
+  fixed_rps_published: false
+  note: >
+    Funnel does not publish a fixed request-per-second limit for Customer APIs.
+    High-frequency polling is discouraged; use sync endpoints for bulk data and
+    contact support for high-volume scenarios.
+  signal:
+    status: 429
+    retry_after_header: true
+    guidance: exponential backoff; honor Retry-After
+idempotency:
+  documented: false
+  note: No idempotency-key contract is documented in the public developer portal.
+pagination:
+  documented: false
+  note: Pagination was not described on the public overview pages reviewed.
+request_tracing:
+  documented: false
+webhooks:
+  supported: true
+  ref: asyncapi/funnel-leasing-webhooks.yml

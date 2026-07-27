@@ -1,0 +1,52 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.funnelleasing.com/apis/customer-api/errors
+format: custom
+envelope:
+  media_type: application/json
+  note: >
+    Funnel uses a custom JSON error shape (not RFC 9457 problem+json). The body
+    MAY include `code`, `message`, and optionally `param`. Not all error
+    responses include a JSON body. Use `code` for programmatic logic, `message`
+    for logging/UI, and `param` to identify the invalid input on validation
+    errors.
+  fields:
+    - name: code
+      type: integer
+      description: Machine-readable error code for programmatic handling.
+    - name: message
+      type: string
+      description: Human-readable message for logging or UI display.
+    - name: param
+      type: string
+      required: false
+      description: Names the invalid input on validation errors.
+  example:
+    code: 1234
+    message: 'Invalid parameter: start_date'
+    param: start_date
+problems:
+  - status: 400
+    title: Bad Request
+    meaning: Invalid or malformed parameters.
+    remediation: Fix request parameters before retrying.
+  - status: 401
+    title: Unauthorized
+    meaning: Missing or invalid API key.
+    remediation: Verify authentication credentials.
+  - status: 403
+    title: Forbidden
+    meaning: Valid key but lacks access to the resource.
+    remediation: Confirm permissions for the endpoint.
+  - status: 404
+    title: Not Found
+    meaning: Resource does not exist or wrong endpoint.
+    remediation: Verify the resource ID and endpoint path.
+  - status: 429
+    title: Too Many Requests
+    meaning: Excessive request volume.
+    remediation: Reduce frequency; retry with exponential backoff; honor the Retry-After header.
+  - status: 500
+    title: Server Error
+    meaning: Internal Funnel error (5xx class).
+    remediation: Retry with exponential backoff; apply a circuit breaker for synchronized failures.

@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: derived
+source: >
+  Derived from Funnel developer portal pages (authentication, errors, webhooks)
+  reviewed 2026-07-19. No OpenAPI/AsyncAPI specification was published.
+standards:
+  - id: https-required
+    conforms: true
+    evidence: Authentication docs state requests must be made over HTTPS.
+  - id: http-basic-auth
+    conforms: true
+    evidence: Customer API uses HTTP Basic (API key as username, blank password).
+  - id: bearer-token
+    conforms: true
+    evidence: Partner API accepts the API key as a Bearer token.
+  - id: oauth2
+    conforms: false
+    evidence: No OAuth 2.0 authorization server or flows documented.
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a custom JSON shape { code, message, param }, not application/problem+json.
+  - id: rfc8594-sunset-header
+    conforms: false
+    evidence: No Sunset/Deprecation header support documented.
+  - id: retry-after
+    conforms: true
+    evidence: 429 responses instruct clients to honor the Retry-After header.
+  - id: webhooks
+    conforms: true
+    evidence: Documents an application/json POST webhooks surface (v2 + legacy v1).

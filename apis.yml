@@ -1,7 +1,28 @@
 aid: funnel-leasing
 name: Funnel Leasing
-description: Funnel Leasing is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Funnel Leasing provides AI-infused CRM and property management software for
+  multifamily (apartment) operators. The platform centralizes the leasing
+  lifecycle from prospect to resident with a next-generation CRM, an AI Virtual
+  Leasing Agent, voice AI insights, marketing automation, and a resident portal
+  (Nestio ResApp), and integrates with property management systems including
+  Yardi, RentManager, and Entrata. Funnel exposes a Customer API for
+  single-account integrations (creating prospects, scheduling tours, and
+  processing lease applications) and a Partner API for reusable, multi-customer
+  integrations, plus an outbound webhooks surface. Formerly known as Nestio.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://static.funnelleasing.com/archer/dist/assets/img/funnel-logos/favicon.png
 url: https://raw.githubusercontent.com/api-evangelist/funnel-leasing/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,53 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Real Estate
+- PropTech
+- Property Management
+- Multifamily
+- Leasing
+- CRM
+- Webhooks
+apis:
+- name: Funnel Customer API
+  description: >-
+    Single-customer integration API for the Funnel leasing platform — create
+    prospects in the CRM, schedule property tours/appointments, and process
+    lease applications. Resources include Appointments, Community, Discovery
+    Sources, Document, Employee Group, Lease, Lease Transaction, Listings,
+    Pricing Matrix, Prospect, and Quote. Authenticates with HTTP Basic (API key
+    as username, blank password) over HTTPS.
+  humanURL: https://developer.funnelleasing.com/apis/customer-api
+  baseURL: https://api.funnelleasing.com
+  tags:
+  - CRM
+  - Leasing
+  - Prospects
+  - Appointments
+  properties:
+  - type: Documentation
+    url: https://developer.funnelleasing.com/apis/customer-api
+  - type: Authentication
+    url: https://developer.funnelleasing.com/apis/customer-api/authentication
+- name: Funnel Partner API
+  description: >-
+    Reusable, multi-customer integration API for partners and platform providers
+    (not tied to a single customer account). Areas include Appointment Booking,
+    Community Details, Prospects & Leads, Communications & Chat, Tasks, Team
+    Management, Custom Scoring, Renewal Status, and ResidentApp. Authenticates
+    with HTTP Basic or a Bearer token.
+  humanURL: https://developer.funnelleasing.com/apis/partner-api
+  baseURL: https://api.funnelleasing.com
+  tags:
+  - Partner
+  - Multi-tenant
+  - Integrations
+  properties:
+  - type: Documentation
+    url: https://developer.funnelleasing.com/apis/partner-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +87,40 @@ maintainers:
 common:
 - type: Website
   url: https://funnelleasing.com/
+- type: DeveloperPortal
+  url: https://developer.funnelleasing.com/
+- type: Documentation
+  url: https://developer.funnelleasing.com/
+- type: APIReference
+  url: https://developer.funnelleasing.com/apis/customer-api
+- type: GettingStarted
+  url: https://developer.funnelleasing.com/apis/customer-api/authentication
+- type: Authentication
+  url: authentication/funnel-leasing-authentication.yml
+- type: Webhooks
+  url: asyncapi/funnel-leasing-webhooks.yml
+- type: ErrorCatalog
+  url: errors/funnel-leasing-problem-types.yml
+- type: Conventions
+  url: conventions/funnel-leasing-conventions.yml
+- type: Lifecycle
+  url: lifecycle/funnel-leasing-lifecycle.yml
+- type: Conformance
+  url: conformance/funnel-leasing-conformance.yml
+- type: DomainSecurity
+  url: security/funnel-leasing-domain-security.yml
+- type: LLMsTxt
+  url: llms/funnel-leasing-llms.txt
+- type: Pricing
+  url: https://funnelleasing.com/products/packages/
+- type: PrivacyPolicy
+  url: https://funnelleasing.com/privacy-notice
+- type: Support
+  url: https://funnelleasing.com/contact/
+- type: Login
+  url: https://nestiolistings.com/login/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,21 @@
+# Funnel Leasing
+
+> Funnel Leasing provides AI-infused CRM and property management software for multifamily operators. Its platform centralizes leasing operations (prospect-to-resident), automates workflows with AI/voice assistants and a Virtual Leasing Agent, and offers a resident portal (Nestio ResApp). Funnel exposes a Customer API for single-account integrations and a Partner API for multi-customer/multi-tenant integrations, plus an outbound webhooks surface.
+
+## APIs
+- [Customer API](https://developer.funnelleasing.com/apis/customer-api): Single-customer integration API — create prospects in the CRM, schedule tours/appointments, and process lease applications. Resources include Appointments, Community, Discovery Sources, Document, Employee Group, Lease, Lease Transaction, Listings, Pricing Matrix, Prospect, and Quote. Base URL https://api.funnelleasing.com (path /api/v2/).
+- [Partner API](https://developer.funnelleasing.com/apis/partner-api): Reusable multi-customer integration API for partners and platform providers. Areas include Appointment Booking, Community Details, Prospects & Leads, Communications & Chat, Tasks, Team Management, Custom Scoring, Renewal Status, and ResidentApp.
+- [Webhooks (v2 latest)](https://developer.funnelleasing.com/webhooks/latest): Outbound events delivered as application/json HTTP POST. A legacy v1 surface is also documented.
+
+## Docs
+- [Developer Portal](https://developer.funnelleasing.com/): API and webhook documentation home.
+- [Authentication](https://developer.funnelleasing.com/apis/customer-api/authentication): HTTP Basic — API key as username, blank password, over HTTPS. Public (client-side) and private (server-to-server) keys. Partner API also accepts a Bearer token.
+- [Errors](https://developer.funnelleasing.com/apis/customer-api/errors): Custom JSON error shape { code, message, param }. Status codes 400/401/403/404/429/5xx; 429 honors Retry-After.
+- [Webhooks Walkthrough](https://developer.funnelleasing.com/webhooks/latest/walkthrough): Configuring and consuming webhook events.
+
+## Company
+- [Funnel Leasing](https://funnelleasing.com/): Multifamily leasing CRM and property management platform; integrates with Yardi, RentManager, and Entrata.
+- [Products & Packages (Pricing)](https://funnelleasing.com/products/packages/)
+- [Privacy Notice](https://funnelleasing.com/privacy-notice)
+- [Contact / Support](https://funnelleasing.com/contact/)
+- [Login](https://nestiolistings.com/login/)

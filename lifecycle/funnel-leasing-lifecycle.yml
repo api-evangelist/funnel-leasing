@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.funnelleasing.com/
+versioning:
+  scheme: uri-path
+  current: v2
+  legacy: v1
+  docs: https://developer.funnelleasing.com/apis/customer-api
+  note: >
+    APIs are versioned in the URL path (e.g. /api/v2/...). A legacy v1 surface
+    remains documented for webhooks (Version 1 / legacy) alongside the current
+    Version 2.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: >
+    No formal deprecation policy or RFC 8594 Sunset/Deprecation header support
+    was found on the public developer portal. A v1 "legacy" webhook surface is
+    maintained in parallel with v2.
+sla:
+  url: null
+status_page: null

@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+host: https://funnelleasing.com
+note: >
+  Probed the standard /.well-known/ discovery surface on the marketing host,
+  the developer portal, and the API host. No documents returned 200 — recorded
+  here as honest absence. The developer portal (developer.funnelleasing.com)
+  returns 403 to automated fetches of these paths.
+documents:
+  - path: /.well-known/security.txt
+    host: https://funnelleasing.com
+    status: 404
+  - path: /security.txt
+    host: https://funnelleasing.com
+    status: 404
+  - path: /.well-known/openid-configuration
+    host: https://funnelleasing.com
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    host: https://funnelleasing.com
+    status: 404
+  - path: /.well-known/api-catalog
+    host: https://funnelleasing.com
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    host: https://funnelleasing.com
+    status: 404
+  - path: /.well-known/openid-configuration
+    host: https://api.funnelleasing.com
+    status: 404
+  - path: /.well-known/security.txt
+    host: https://developer.funnelleasing.com
+    status: 403
+  - path: /llms.txt
+    host: https://developer.funnelleasing.com
+    status: 403
+  - path: /llms.txt
+    host: https://funnelleasing.com
+    status: 404
