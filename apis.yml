@@ -35,6 +35,15 @@ created: '2026-07-17'
 modified: '2026-07-19'
 tags:
 - Company
+- Real-Estate
+- PropTech
+- Property Management
+- Multifamily
+- Leasing
+- CRM
+- Webhook
+tags_raw:
+- Company
 - Real Estate
 - PropTech
 - Property Management
@@ -73,6 +82,10 @@ apis:
   humanURL: https://developer.funnelleasing.com/apis/partner-api
   baseURL: https://api.funnelleasing.com
   tags:
+  - Partner
+  - Multi-Tenant
+  - Integration
+  tags_raw:
   - Partner
   - Multi-tenant
   - Integrations
