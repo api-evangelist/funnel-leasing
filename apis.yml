@@ -10,6 +10,17 @@ description: >-
   single-account integrations (creating prospects, scheduling tours, and
   processing lease applications) and a Partner API for reusable, multi-customer
   integrations, plus an outbound webhooks surface. Formerly known as Nestio.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
