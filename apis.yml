@@ -94,7 +94,7 @@ apis:
   baseURL: https://api.funnelleasing.com
   tags:
   - Partner
-  - Multi-Tenant
+  - Multi-tenant
   - Integration
   tags_raw:
   - Partner
