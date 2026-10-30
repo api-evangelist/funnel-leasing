@@ -64,6 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Funnel Leasing is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Funnel Leasing provides AI-infused CRM and property management software for multifamily (apartment) operators. The platform centralizes the leasing lifecycle from prospect to resident with a next-generation CRM, an AI Virtual Leasing Agent, voice AI insights, marketing automation, and a resident portal (Nestio ResApp), and integrates with property management systems including Yardi, RentManager, and Entrata. Funnel exposes a Customer API for single-account integrations (creating prospects, scheduling tours, and processing lease applications) and a Partner API for reusable, multi-customer integrations, plus an outbound webhooks surface. Formerly known as Nestio.
 
-Backed by: techstars — https://funnelleasing.com/
+**Areas:** Company · Real Estate · PropTech · Property Management · Multifamily · Leasing · CRM · Webhook
+
+## Funnel Leasing on APIs.io
+
+Everything profiled for Funnel Leasing is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/funnel-leasing/](https://apis.io/providers/funnel-leasing/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Funnel Customer API](https://apis.io/apis/funnel-leasing/funnel-customer-api/) — Single-customer integration API for the Funnel leasing platform — create prospects in the CRM, schedule property tours/appointments, and process lease…
+- [Funnel Partner API](https://apis.io/apis/funnel-leasing/funnel-partner-api/) — Reusable, multi-customer integration API for partners and platform providers (not tied to a single customer account). Areas include Appointment Booking,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Funnel Leasing Webhooks](https://apis.io/asyncapis/funnel-leasing/funnel-leasing-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Funnel Leasing Authentication](https://apis.io/security/funnel-leasing/funnel-leasing-authentication/)
+- [Funnel Leasing Domain Security](https://apis.io/security/funnel-leasing/funnel-leasing-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://funnelleasing.com/)
+- [Documentation](https://developer.funnelleasing.com/)
+- [Getting started](https://developer.funnelleasing.com/apis/customer-api/authentication)
+- [API reference](https://developer.funnelleasing.com/apis/customer-api)
+- [Pricing](https://funnelleasing.com/products/packages/)
+- [Support](https://funnelleasing.com/contact/)
+- [Privacy policy](https://funnelleasing.com/privacy-notice)
+
+## API Evangelist rating
+
+**Kin Score 35.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 4.5 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 54.8 |
+| Access clarity | 27.6 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 20.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/funnel-leasing/](https://apis.io/providers/funnel-leasing/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Funnel Leasing: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/funnel-leasing/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
